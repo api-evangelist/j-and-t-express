@@ -1,8 +1,26 @@
 aid: j-and-t-express
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/j-and-t-express.png
 name: J&T Express
-description: 'J&T Express is a company surfaced as a portfolio company of hongshan and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'J&T Express (J&T Global Express Ltd, HKEX: 1519) is a global logistics service operator
+  whose core business is express parcel delivery and international logistics. Founded in Indonesia in 2015,
+  it operates express delivery networks across 13 countries including Indonesia, Vietnam, Malaysia, the
+  Philippines, Thailand, Cambodia, Singapore, China, Saudi Arabia, the UAE, Mexico, Brazil, and Egypt, with
+  international freight services reaching Asia, Europe, Africa, the Americas, and Oceania. The company serves
+  e-commerce sellers and consumers with parcel pickup, sorting, line-haul, last-mile delivery, and track-and-trace.
+  As of this profile J&T Express publishes a public track-and-trace web experience and regional merchant
+  onboarding, but no public developer portal, API documentation, or OpenAPI definition was found during
+  enrichment; this profile captures the company identity and probed domain security.'
 url: https://raw.githubusercontent.com/api-evangelist/j-and-t-express/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Logistics
+- Delivery
+- Shipping
+- Express
+- Supply Chain
+- E-Commerce
+- Courier
+- Track and Trace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/j-and-t-express-domain-security.yml
 - type: Website
-  url: https://jtexpress.com
+  url: https://www.jtexpress.com
+- type: PrivacyPolicy
+  url: https://www.jtexpress.com/tc/privacyPolicy
+- type: TermsOfService
+  url: https://www.jtexpress.com/tc/termsOfUse
+- type: Support
+  url: https://www.jtexpress.com/tc/contactUs
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
